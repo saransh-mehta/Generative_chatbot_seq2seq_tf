@@ -5,7 +5,7 @@ The encoder reads the input sequence, word by word and emits a context (a functi
 which would ideally capture the essence (semantic summary) of the input sequence.
 Based on this context, the decoder generates the output sequence, one word at a time while looking at the context and the previous word during each timestep.
 
-<img src = "images/seq2seq.png">
+<img src = "images/seq2seq2.png" />
 
 # Data Preparation
 For the seq2seq chatbot, twitter chat log dataset is used obtained from https://github.com/Marsan-Ma/chat_corpus/ and for general pre-processing of data, data.py is used which is also taken from Marsen-Ma. It contains simple functions to filter out sentences
@@ -31,7 +31,7 @@ Vocab size is important as seq2seq model is gonna compute softmax over vocab_siz
 
 Thus, we will plot the freq of most frequent 10k words and see where is the frquency becoming too less, we can chooose that as cut-off point of vocab in the data.py script
 
-<img src = "images/vocab_frequency.jpg">
+<img src = "images/vocab_frequency.png">
 
 # Model
 I have made a list of placeholders, i.e one placeholder for each time-step
